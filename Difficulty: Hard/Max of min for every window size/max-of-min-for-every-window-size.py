@@ -27,6 +27,7 @@ class Solution:
             res[i] = max(res[i], res[i + 1])
     
         return res
+        
 
 #{ 
  # Driver Code Starts
