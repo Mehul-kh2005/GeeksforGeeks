@@ -14,6 +14,7 @@ class Solution:
                 lenArr[top] = windowSize
             s.append(i)
     
+    
         while s:
             top = s.pop()
             windowSize = n if not s else n - s[-1] - 1
@@ -27,7 +28,6 @@ class Solution:
             res[i] = max(res[i], res[i + 1])
     
         return res
-        
 
 #{ 
  # Driver Code Starts
