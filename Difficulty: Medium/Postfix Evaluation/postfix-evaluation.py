@@ -28,6 +28,7 @@ class Solution:
                     stack.append(math.trunc(val2 / val1))
     
         return stack.pop()
+        
 
 #{ 
  # Driver Code Starts.
