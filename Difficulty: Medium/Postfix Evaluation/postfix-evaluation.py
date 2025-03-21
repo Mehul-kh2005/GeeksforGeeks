@@ -29,7 +29,6 @@ class Solution:
     
         return stack.pop()
 
-
 #{ 
  # Driver Code Starts.
 
