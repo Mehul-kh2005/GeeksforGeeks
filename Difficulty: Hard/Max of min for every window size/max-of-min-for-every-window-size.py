@@ -2,7 +2,7 @@
 class Solution:
     def maxOfMins(self,arr):
         n = len(arr)
-        res = [0] * n
+        result = [0] * n
         s = []
     
         lenArr = [0] * n
@@ -22,12 +22,12 @@ class Solution:
     
         for i in range(n):
             windowSize = lenArr[i] - 1  
-            res[windowSize] = max(res[windowSize], arr[i])
+            result[windowSize] = max(result[windowSize], arr[i])
     
         for i in range(n - 2, -1, -1):
-            res[i] = max(res[i], res[i + 1])
+            result[i] = max(result[i], result[i + 1])
     
-        return res
+        return result
 
 #{ 
  # Driver Code Starts
