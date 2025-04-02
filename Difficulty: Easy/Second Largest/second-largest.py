@@ -1,11 +1,17 @@
 #User function Template for python3
 class Solution:
     def getSecondLargest(self, arr):
-        unique_elements=list(set(arr))
-        if len(unique_elements)<2:
-            return -1
-        unique_elements.sort()
-        return unique_elements[-2]
+        arr=set(arr)
+        first,second=-1,-1
+        
+        for num in arr:
+            if num>first:
+                second,first=first,num
+                
+            elif first>num>second:
+                second=num
+                
+        return second
 
 #{ 
  # Driver Code Starts
